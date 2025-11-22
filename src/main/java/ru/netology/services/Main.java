@@ -1,7 +1,7 @@
 package ru.netology.services;
 
 public class Main {
-    public static void  main(String[] args) {
+    public static void main(String[] args) {
         FreelancerService service = new FreelancerService();
 
         System.out.println("Результат 1: " + service.calculate(10_000, 3000, 20_000));

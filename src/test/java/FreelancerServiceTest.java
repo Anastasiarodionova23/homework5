@@ -5,7 +5,7 @@ import ru.netology.services.FreelancerService;
 public class FreelancerServiceTest {
 
     @Test
-    public void shouldCalculateMonthOfRest () {
+    public void shouldCalculateMonthOfRest() {
         FreelancerService service = new FreelancerService();
 
         int expected1 = 3;
@@ -19,25 +19,25 @@ public class FreelancerServiceTest {
         Assertions.assertEquals(expected2, actual2);
     }
 
-        @Test
-        public void shouldCalculateWhenNoRest () {
-            FreelancerService service = new FreelancerService();
+    @Test
+    public void shouldCalculateWhenNoRest() {
+        FreelancerService service = new FreelancerService();
 
-            int expected = 0;
-            int actual = service.calculate(5_000, 3000, 100_000);
+        int expected = 0;
+        int actual = service.calculate(5_000, 3000, 100_000);
 
-            Assertions.assertEquals(expected, actual);
-        }
-        @Test
-        public void shouldCalculateWhenAllRest () {
-            FreelancerService service = new FreelancerService();
+        Assertions.assertEquals(expected, actual);
+    }
 
-            int expected = 10;
-            int actual = service.calculate(100_000, 1000, 0);
+    @Test
+    public void shouldCalculateWhenAllRest() {
+        FreelancerService service = new FreelancerService();
 
-            Assertions.assertEquals(expected, actual);
-        }
+        int expected = 10;
+        int actual = service.calculate(100_000, 1000, 0);
 
+        Assertions.assertEquals(expected, actual);
+    }
 
 
 }
